@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>css styling/PLP2025</title>
+        <meta name="author" content="maxallday">
+        <meta name="keywords" content="PLP2025, webdev,html,css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Lydia Coffee House</h1>
+            <p>Your perfect coffee break</p>
+            <button id="themeToggle">Toggle</button>
+            <button id="themeToggle">
+                <span class="light">☀️ Light</span>
+                <span class="dark">🌙 Dark</span>
+            </button>
+        </header>
+
+        <main>
+            <section class="menu">
+                <h1>Our Menu</h1>
+                <img src="img/cofee_cup.jpg" alt="hot coffee" class="menu-image">
+                <ul>
+                    <li><strong>Espresso</strong>- Ksh 250
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Cappuccino</strong>- Ksh 350
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Latte</strong>- Ksh 300
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Mocha</strong>- Ksh 310
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Tea Masala</strong>- Ksh 180
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Kahawa</strong>- Ksh 150
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Ginger Tea</strong>- Ksh 200
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                    <li><strong>Green Tea</strong>- Ksh 150
+                        <button class="buy-now" onclick="showPopup()">Buy now</button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Order Confirmation Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="hidePopup()">&times;</span>
+                <h2>Order Confirmation</h2>
+                <p>Your order has been placed successfully!</p>
+                <button onclick="hidePopup()">Close</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Contact us: info@lydiacoffee.com | (123) 456-7890</p>
+            <p>Open daily: 8 AM - 8 PM</p>
+            <div class="social-media">
+                <p>Follow us:</p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <!-- Recognizing the source for the image -->
+            <a href="http://www.freepik.com">Photos designed by ikatod / Freepik</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

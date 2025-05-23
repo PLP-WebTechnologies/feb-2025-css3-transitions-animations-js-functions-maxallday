@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif, 'Albert Sans';
+    background-color: #f8f4e3; /* Creamy background */
+    background-size: cover;
+    background: linear-gradient();
+    color: #644641; /* Coffee brown */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    font-family: 'Albert Sans';font-size: 22px; font-weight: 900;
+    background-color: #411908; /* Rich brown */
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    margin: 5px 0 0;
+    font-family: 'Sofia';font-size: 32px;
+    text-align: center; padding-bottom: 90px; 
+    color: rgb(221, 108, 146);
+  }
+  
+  /* Menu Section */
+  .menu {
+   
+    text-align: center;
+    font-family: 'Sofia';font-size: 22px;
+    padding: 100px;
+    border-radius: 50%;
+  }
+  
+  .menu h1 {
+    color: #572d1d; /* Match header color */
+    font-size: 2em;
+    
+  }
+  
+  .menu-image {
+    border: 5px solid #38180c;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  /*list items*/
+  .menu ul li {
+    background-color: #613424; /* Light coffee shade */
+    margin: 20px auto;
+    color: #f8f4e3;
+    padding: 10px;
+    border-radius: 5px;
+    width: 75%;
+    max-width: 400px;
+  }
+  
+  /* Button Styles */
+  .buy-now {
+    background-color: #b85c38; /* Rich brown to match the theme */
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .buy-now:hover {
+    background-color: #310f05; /* Slightly darker shade on hover */
+    border-radius: 4px;
+    color: rgb(182, 161, 168);
+  }
+  
+/*footer*/
+.footer {
+  text-align: center;
+}
+ 
+/* toggle button */
+/* Default light theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark mode styling */
+/* Default light theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Toggle button styling */
+#themeToggle {
+    position: relative;
+    background-color: #0e2432;
+    color: white;
+    padding: 20px 0px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for light/dark theme text */
+#themeToggle .light,
+#themeToggle .dark {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+/* Initially show light mode */
+#themeToggle .dark {
+    transform: translateX(-100%);
+}
+
+/* Dark mode button animation */
+.dark-mode #themeToggle {
+    background-color: #2c3e50;
+}
+
+.dark-mode #themeToggle .light {
+    transform: translateX(100%);
+}
+
+.dark-mode #themeToggle .dark {
+    transform: translateX(0);
+}
+
+
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(203, 201, 199);
+    padding: 20px;
+    border: 2px solid #78b7e2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+    border-radius: 15px;
+}
+
+/* Popup content styling */
+.popup .popup-content {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.popup .close {
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+.popup button {
+    background-color: #0f5e42;
+    color: rgb(33, 22, 22);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.popup button:hover {
+    background-color: #b92933;
+}
